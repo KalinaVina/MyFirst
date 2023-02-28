@@ -1,0 +1,348 @@
+user@endless:~$ cd di1
+user@endless:~/di1$ git clone https://github.com/KalinaVina/MyFirst.git
+Клонирование в «MyFirst»…
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Получение объектов: 100% (3/3), готово.
+user@endless:~/di1$ open .
+user@endless:~/di1$ cd MyFirst
+user@endless:~/di1/MyFirst$ nano text.txt
+user@endless:~/di1/MyFirst$ git ststus
+git: «ststus» не является командой git. Смотрите «git --help».
+
+Самые похожие команды:
+	status
+user@endless:~/di1/MyFirst$ git status
+На ветке main
+Ваша ветка обновлена в соответствии с «origin/main».
+
+Неотслеживаемые файлы:
+  (используйте «git add <файл>…», чтобы добавить в то, что будет включено в коммит)
+	text.txt
+
+ничего не добавлено в коммит, но есть неотслеживаемые файлы (используйте «git add», чтобы отслеживать их)
+user@endless:~/di1/MyFirst$ git add .
+user@endless:~/di1/MyFirst$ git status
+На ветке main
+Ваша ветка обновлена в соответствии с «origin/main».
+
+Изменения, которые будут включены в коммит:
+  (use "git restore --staged <file>..." to unstage)
+	новый файл:    text.txt
+
+user@endless:~/di1/MyFirst$ git commit -m"add 1 file"
+[main a4f9822] add 1 file
+ 1 file changed, 8 insertions(+)
+ create mode 100644 text.txt
+user@endless:~/di1/MyFirst$ git push
+Username for 'https://github.com': KalinaVina
+Password for 'https://KalinaVina@github.com': 
+remote: Permission to KalinaVina/MyFirst.git denied to KalinaVina.
+fatal: «https://github.com/KalinaVina/MyFirst.git/» недоступно: The requested URL returned error: 403
+user@endless:~/di1/MyFirst$ git config --global user.namr "KalinaVina"
+user@endless:~/di1/MyFirst$ git config --global user.email "dariya.kalvina@gmail.com"
+user@endless:~/di1/MyFirst$ git status
+На ветке main
+Ваша ветка опережает «origin/main» на 1 коммит.
+  (используйте «git push», чтобы опубликовать ваши локальные коммиты)
+
+нечего коммитить, нет изменений в рабочем каталоге
+user@endless:~/di1/MyFirst$ git push
+Username for 'https://github.com': KalinaVina
+Password for 'https://KalinaVina@github.com': 
+Перечисление объектов: 4, готово.
+Подсчет объектов: 100% (4/4), готово.
+При сжатии изменений используется до 4 потоков
+Сжатие объектов: 100% (2/2), готово.
+Запись объектов: 100% (3/3), 283 bytes | 283.00 KiB/s, готово.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/KalinaVina/MyFirst.git
+   f3afcb3..a4f9822  main -> main
+user@endless:~/di1/MyFirst$ nano text2.txt
+user@endless:~/di1/MyFirst$ git status
+На ветке main
+Ваша ветка обновлена в соответствии с «origin/main».
+
+Неотслеживаемые файлы:
+  (используйте «git add <файл>…», чтобы добавить в то, что будет включено в коммит)
+	text2.txt
+
+ничего не добавлено в коммит, но есть неотслеживаемые файлы (используйте «git add», чтобы отслеживать их)
+user@endless:~/di1/MyFirst$ git add .
+user@endless:~/di1/MyFirst$ git commit -m"add txt2"
+[main 6219e52] add txt2
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text2.txt
+user@endless:~/di1/MyFirst$ git status
+На ветке main
+Ваша ветка опережает «origin/main» на 1 коммит.
+  (используйте «git push», чтобы опубликовать ваши локальные коммиты)
+
+нечего коммитить, нет изменений в рабочем каталоге
+user@endless:~/di1/MyFirst$ git push
+Username for 'https://github.com': KalinaVina
+Password for 'https://KalinaVina@github.com': 
+Перечисление объектов: 4, готово.
+Подсчет объектов: 100% (4/4), готово.
+При сжатии изменений используется до 4 потоков
+Сжатие объектов: 100% (2/2), готово.
+Запись объектов: 100% (3/3), 318 bytes | 318.00 KiB/s, готово.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/KalinaVina/MyFirst.git
+   a4f9822..6219e52  main -> main
+user@endless:~/di1/MyFirst$ .bash_history
+bash: .bash_history: команда не найдена
+user@endless:~/di1/MyFirst$ history
+    1  ls/bin
+    2  ls/file
+    3  pwd
+    4  ls
+    5  ls-a
+    6  ls-l
+    7  ls -a
+    8  cd ..
+    9  cd les
+   10  mkdir group33
+   11  clear
+   12  history
+   13  touch 1.txt
+   14  cat>2.txt
+   15  vim7.txt
+   16  /etc/os-release
+   17  cat /etc/issue
+   18  mkdir test1
+   19  ls
+   20  history
+   21  cd ~
+   22  cd /Postman
+   23  cd ../Postman
+   24  cd ~/Postman
+   25  ls
+   26  ls -a
+   27  cd ~
+   28  clear
+   29  history
+   30  pwd
+   31  ls
+   32  mkdir test2
+   33  ls
+   34  touch file1
+   35  ls
+   36  touch file2.txt
+   37  ls
+   38  ls -l
+   39  vim
+   40  history
+   41  grep vim
+   42  nano file1
+   43  man vim
+   44  vim file1
+   45  pwd
+   46  mkdir
+   47  mkdor new_papka
+   48  mkdir new_papka
+   49  pwd
+   50  cd/new_papka
+   51  pwd
+   52  mkdir new1
+   53  cd new1
+   54  mkdir {test1,test2,test3}
+   55  cd test2
+   56  touch new-file-{1,2,3}.txt
+   57  touch new-file-{4,5}.json
+   58  mkdir {folder1, folder2, folder3}
+   59  ls
+   60  cat new-file-2.txt
+   61  vim new-file-2.txt
+   62  nano new-file-2.txt
+   63  cd ..
+   64  mv new-file-2.txt test1
+   65  cd test2
+   66  mv new-file-2.txt test3
+   67  mv new-file-3.txt test3
+   68  cd test3
+   69  cp new-file-4.json new-file-5.json test3
+   70  cp new-file-4.json new-file-5.json new1
+   71  cp new-file-4.json foldre1
+   72  cp new-file-5.json folder1
+   73  find/ -name "new-file-2.txt"
+   74  find/ -name "new-file-3.txt"
+   75  find/ -name "new-file-4.json"
+   76  find - name "new-file-4.json"
+   77  find -name "new-file-4.json"
+   78  less +f
+   79  tail -f location_of_log_file
+   80  tail -f
+   81  date
+   82  pwd
+   83  mkd first_folder
+   84  mkdir first_folder
+   85  cd first_folder
+   86  mkdir {fol1, fol2, fol3}
+   87  cd fol2
+   88  pwd
+   89  mkdir first_folder
+   90  cd first_folder
+   91  mkdir fol1 fol2 fol3
+   92  cd fol2
+   93  touch file11.txt file2.txt file3.txt
+   94  touch file4.json file5.json
+   95  mkdir secfol1 secfol2 secfol3
+   96  ls
+   97  cat file1.txt
+   98  nano file1.txt
+   99  cat file1.txt
+  100  cd ..
+  101  cd fol2
+  102  mv file1.txt file2.txt first_folder
+  103  mv file1.txt file2.txt secfil1
+  104  mv file1.txt file2.txt secfol
+  105  mv file1.txt secfol1
+  106  mv file2.txt secfil1
+  107  cp file4.json secfol1
+  108  cp file5.json secfol1
+  109  find -name file1.txt
+  110  tail -f
+  111  mkdir di1
+  112  pwd
+  113  cd di1
+  114  git clonehttps://github.com/KalvinaDasha/New_Le.git
+  115  git clone https://github.com/KalvinaDasha/New_Le.git
+  116  open.
+  117  open .
+  118  ls -la
+  119  cd di1
+  120  cd New_Le
+  121  git status
+  122  vim user.txt
+  123  nano user.txt
+  124  cat user2.txt
+  125  nano user2.txt
+  126  ls -la
+  127  git status
+  128  git add user.txt
+  129  git status
+  130  git add.
+  131  git add .
+  132  git status
+  133  nano file1.json
+  134  git status
+  135  git add .
+  136  cat file1.json
+  137  nano file1.json
+  138  git status
+  139  git add .
+  140  git status
+  141  git commit -m "add 2txt and 1json"
+  142  git pus
+  143  git push
+  144  git config --global user.name "KalvinaDasha"
+  145  git config --global user.email "chuchundra_91@mail.ru"
+  146  git config --global user.email
+  147  git push
+  148  git commit -m "add files"
+  149  git push
+  150  $ ssh-keygen -t ed25519 -C "chuchundra_91@mail.ru"
+  151  $ ssh-keygen -t ed25519 -C "chuchundra_91@mail.ru" > Generating public/private ALGORITHM key pair.
+  152  $ ssh-keygen -t rsa -b 4096 -C "chuchundra_91@mail.ru"
+  153  ssh-keygen -t rsa -b 4096 -C "chuchundra_91@mail.ru"
+  154  ssh-keygen -t ed25519 -C "chuchundra_91@mail.ru"
+  155  pwd
+  156  cd di1
+  157  ls -la
+  158  git push
+  159  open .
+  160  cd New_Le
+  161  git commit -m"jjj"
+  162  git push
+  163  git pull
+  164  git push
+  165  pwd
+  166  cd di1
+  167  git clone git@github.com:KalvinaDasha/New_Le.git
+  168  mkdir newfol
+  169  cd newfol
+  170  git clone git@github.com:KalvinaDasha/New_Le.git
+  171  cd di1
+  172  cd new_le
+  173  cd New_Le
+  174  git status
+  175  git add .
+  176  git status
+  177  git commit -m"1"
+  178  get push
+  179  git push
+  180  git config --global user.name "KalvinaDasha"
+  181  git config --global user.email chuchundra_91@mail.ru
+  182  ls -al ~/.ssh
+  183  ssh-keygen -t ed25519 -C "chuchundra_91@mail.ru"
+  184  eval "$(ssh-agent -s)"
+  185  ssh-add ~/.ssh/id_ed25519
+  186  clip < ~/.ssh/id_ed25519.pub
+  187  ~ cat ~/.ssh/id_ed25519.pub
+  188  git push
+  189  git push origin
+  190  git push
+  191  > Generating public key
+  192  Generating public key
+  193  Enter a file in which to save the key
+  194  ssh-keygen -t ed25519 -c "chuchundra_91@mail.ru" Generating public/private ed25519 key pair.
+  195  Enter a file in which to save the key (/c/Users/KalvinaDasha/.ssh/id_25519)
+  196  Enter a file in which to save the key (/c/Users/KalvinaDasha/.ssh/id_25519):
+  197  Enter a file in which to save the key (/Users/KalvinaDasha/.ssh/id_25519):
+  198  nter a file in which to save the key(/Users/KalvinaDasha/.ssh/id_25519):
+  199  Enter a file in which to save the key /Users/KalvinaDasha/.ssh/id_25519
+  200  cd di1
+  201  git clone https://github.com/KalvinaDasha/HomeWork1.git
+  202  open .
+  203  git status
+  204  nano file1.txt
+  205  git status
+  206  git add .
+  207  git status
+  208  nano file2.txt
+  209  git status
+  210  git add .
+  211  git status
+  212  git commit -m"git status!"
+  213  git status
+  214  git push
+  215  git commit -m"fjf"
+  216  git push
+  217  nano go.txt
+  218  git status
+  219  git add .
+  220  git status
+  221  git push
+  222  cd di1
+  223  cd HomeWork1
+  224  nano fot.txt
+  225  git status
+  226  git add .
+  227  git status
+  228  git commit -m"add2file"
+  229  git push
+  230  cd di1
+  231  git clone https://github.com/KalinaVina/MyFirst.git
+  232  open .
+  233  cd MyFirst
+  234  nano text.txt
+  235  git ststus
+  236  git status
+  237  git add .
+  238  git status
+  239  git commit -m"add 1 file"
+  240  git push
+  241  git config --global user.namr "KalinaVina"
+  242  git config --global user.email "dariya.kalvina@gmail.com"
+  243  git status
+  244  git push
+  245  nano text2.txt
+  246  git status
+  247  git add .
+  248  git commit -m"add txt2"
+  249  git status
+  250  git push
+  251  .bash_history
+  252  history
