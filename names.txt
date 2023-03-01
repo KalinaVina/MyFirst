@@ -4,5 +4,3 @@ Aktiniya
 ^c
 Ignat
 Leopold
-Martin
-Karl
